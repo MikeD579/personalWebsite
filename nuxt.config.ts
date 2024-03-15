@@ -2,9 +2,18 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  css: ['~/assets/css/main.css'],
+
   nitro: {
     preset: "cloudflare-pages"
   },
 
-  modules: ["nitro-cloudflare-dev", "@nuxtjs/google-fonts"]
+  modules: ["nitro-cloudflare-dev", "@nuxtjs/google-fonts"],
+
+  googleFonts: {
+    families: {
+      'Space Mono': true,
+      'Tangerine': true,
+    }
+  },
 })

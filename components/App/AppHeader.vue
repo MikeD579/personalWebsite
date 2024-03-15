@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <p class="name">Michael Dominguez</p>
+        <a href="#" class="name">Michael Dominguez</a>
         <nav>
             <li>Home</li>
             <li>About</li>
@@ -15,7 +15,9 @@
     padding: 0 2rem;
 }
 .name {
-    font-family: 'Tangerine' cursive, serif ;
+    font-family: 'Tangerine';
+    font-size: 3rem;
+    margin: 0;
 }
 nav {
     display: flex;
