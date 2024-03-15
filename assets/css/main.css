@@ -6,3 +6,8 @@ a {
     color: var(--primary-color);
     text-decoration: none;
 }
+
+body {
+    font-family: 'Space Mono', monospace;
+    padding: 2px;
+}
