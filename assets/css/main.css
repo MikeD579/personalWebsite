@@ -1,5 +1,37 @@
 :root {
-    --primary-color: black;
+    --background-color: #F9F3DC;
+    --primary-color: #000f14;
+    --secondary-color: #7ea0b7;
+    --secondary-color: #437C90;
+    --secondary-color: #FF4365;
+
+    --background-color-dark: #222;
+    --primary-color-dark: #d2b48c;
+    --secondary-color-dark: #F69865;
+}
+
+.app {
+    margin: 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    margin-top: 5rem;
+}
+
+.cursive {
+    font-family: 'Tangerine';
+    font-size: 300%;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 a {
@@ -7,7 +39,34 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+h1 {
+    position: relative;
+    right: 10px;
+}
+
 body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+
     font-family: 'Space Mono', monospace;
     padding: 2px;
+}
+
+select {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+}
+
+button {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+
+    border: none;
+    cursor: pointer;
 }

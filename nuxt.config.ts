@@ -2,18 +2,30 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  css: ['~/assets/css/main.css'],
+  css: [
+    '~/assets/css/main.css',
+    '~/assets/css/dark.css'
+  ],
 
   nitro: {
     preset: "cloudflare-pages"
   },
 
-  modules: ["nitro-cloudflare-dev", "@nuxtjs/google-fonts"],
+  modules: [
+    "nitro-cloudflare-dev",
+    "@nuxtjs/google-fonts",
+    "@nuxtjs/color-mode"
+  ],
 
   googleFonts: {
     families: {
       'Space Mono': true,
       'Tangerine': true,
     }
+  },
+
+  colorMode: {
+    preference: 'system',
+    fallback: 'dark',
   },
 })
