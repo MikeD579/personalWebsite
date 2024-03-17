@@ -5,7 +5,14 @@
             <li><a href="#about">About</a></li>
         </nav>
         <div>
-            <button @click="toggleColorMode()"><a class="cursive">{{ colorMode.value }}</a></button>
+            <button
+                @click="toggleColorMode()"
+            >
+            <ColorScheme placeholder="loading" tag="span" class="cursive">
+                <a class="cursive">{{ $colorMode.preference }}</a>
+                <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span>
+            </ColorScheme>
+            </button>
         </div>
     
     </div>
@@ -15,7 +22,7 @@
 const colorMode = useColorMode()
 
 function toggleColorMode() {
-    colorMode.value = colorMode.value === 'dark' ? 'light' : 'dark'
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
 }
 </script>
 
