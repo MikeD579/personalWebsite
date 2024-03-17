@@ -9,8 +9,7 @@
                 @click="toggleColorMode()"
             >
             <ColorScheme placeholder="loading" tag="span" class="cursive">
-                <a class="cursive">{{ $colorMode.preference }}</a>
-                <span v-if="$colorMode.preference === 'system'">(<i>{{ $colorMode.value }}</i> mode detected)</span>
+                <a class="cursive">{{ $colorMode.value }}</a>
             </ColorScheme>
             </button>
         </div>
