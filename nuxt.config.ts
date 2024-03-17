@@ -19,8 +19,12 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      'Space Mono': true,
-      'Tangerine': true,
+      'Space Mono': {
+        wght: [400, 700]
+      },
+      'Tangerine': {
+        wght: [400]
+      },
     }
   },
 
