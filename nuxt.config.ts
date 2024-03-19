@@ -14,7 +14,8 @@ export default defineNuxtConfig({
   modules: [
     "nitro-cloudflare-dev",
     "@nuxtjs/google-fonts",
-    "@nuxtjs/color-mode"
+    "@nuxtjs/color-mode",
+    "vue3-carousel-nuxt"
   ],
 
   googleFonts: {
