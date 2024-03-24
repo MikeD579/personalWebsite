@@ -22,6 +22,7 @@
     "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/google-fonts": "^3.1.3",
     "nitro-cloudflare-dev": "^0.1.1",
+    "nuxt-viewport": "^2.1.4",
     "wrangler": "^3.32.0"
   }
 }

@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px) {
+    main {
+        width: auto;
+        min-width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-container {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+
+        background-color: var(--background-color-dark);
+    }
+
+    .app-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .app-nav li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-bottom: solid gray 1px;
+    }
+
+    .footer {
+        margin-top: 5rem;
+        position: sticky;
+        float: right;
+        bottom: 0;
+    }
+}

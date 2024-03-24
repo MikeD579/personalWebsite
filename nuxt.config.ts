@@ -4,7 +4,8 @@ export default defineNuxtConfig({
 
   css: [
     '~/assets/css/main.css',
-    '~/assets/css/dark.css'
+    '~/assets/css/dark.css',
+    '~/assets/css/media.css'
   ],
 
   nitro: {
@@ -15,7 +16,8 @@ export default defineNuxtConfig({
     "nitro-cloudflare-dev",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
-    "vue3-carousel-nuxt"
+    "vue3-carousel-nuxt",
+    "nuxt-viewport"
   ],
 
   googleFonts: {

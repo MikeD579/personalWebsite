@@ -3,15 +3,10 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 import { filename } from 'pathe/utils'
 
-const glob = import.meta.glob('@/assets/imgs/carousel/*.jpg', {eager: true})
-
-
+const glob: Record<string, any> = import.meta.glob('@/assets/imgs/carousel/*.jpg', {eager: true})
 const imgs = Object.fromEntries(
     Object.entries(glob).map(([key, value]) => [filename(key), value.default])
 )
-console.log(imgs)
-
-var currentImg = 1
 </script>
 
 <template>
@@ -24,7 +19,7 @@ var currentImg = 1
             />
         </Slide>
 
-        <template #addons class="no">
+        <template #addons>
             <Navigation />
             <Pagination />
         </template>
@@ -53,9 +48,14 @@ var currentImg = 1
 }
 
 .carousel__slide--active {
-  opacity: 1;
   transform: rotateY(0) scale(1.1);
   transition-duration: 1000ms;
   z-index: 1;
+}
+
+.carousel__prev,
+.carousel__next {
+    margin-left: auto;
+    margin-right: auto;
 }
 </style>
