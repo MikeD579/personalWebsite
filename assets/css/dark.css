@@ -21,3 +21,8 @@
     background-color: var(--background-color-dark);
     color: var(--primary-color-dark);
 }
+
+.dark-mode .nav-container {
+    background-color: var(--background-color-dark);
+    color: var(--primary-color-dark);
+}

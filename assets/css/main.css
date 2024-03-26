@@ -84,7 +84,8 @@ button {
     position: relative;
     z-index: 1;
 
-    background-color: var(--background-color-dark);
+    background-color: var(--background-color);
+    color: var(--primary-color);
 }
 
 .app-nav {
