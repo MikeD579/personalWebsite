@@ -16,15 +16,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-self: center;
 
     width: 50%;
     min-width: 400px;
-
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 li {
@@ -72,8 +66,10 @@ button {
 ************/
 
 .app {
-    display: inline;
+    padding: 1rem;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .nav-container {
@@ -101,6 +97,7 @@ button {
 
 .footer {
     margin-top: 5rem;
+    padding: 25px;
     position: sticky;
     float: right;
     bottom: 0;

@@ -17,7 +17,8 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
     "vue3-carousel-nuxt",
-    "nuxt-viewport"
+    "nuxt-viewport",
+    "@pinia/nuxt"
   ],
 
   googleFonts: {
