@@ -8,6 +8,13 @@ export default defineNuxtConfig({
     '~/assets/css/media.css'
   ],
 
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   nitro: {
     preset: "cloudflare-pages"
   },
