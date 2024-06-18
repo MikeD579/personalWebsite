@@ -2,11 +2,25 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  app: {
+    head: {
+      link: [
+        { rel: "icon", type: "image/svg", href: "/cross.svg" }
+      ]
+    }
+  },
+
   css: [
     '~/assets/css/main.css',
-    '~/assets/css/dark.css',
     '~/assets/css/media.css'
   ],
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 
   nitro: {
     preset: "cloudflare-pages"
@@ -15,7 +29,6 @@ export default defineNuxtConfig({
   modules: [
     "nitro-cloudflare-dev",
     "@nuxtjs/google-fonts",
-    "@nuxtjs/color-mode",
     "vue3-carousel-nuxt",
     "nuxt-viewport"
   ],
@@ -31,8 +44,4 @@ export default defineNuxtConfig({
     }
   },
 
-  colorMode: {
-    preference: 'system',
-    fallback: 'dark',
-  },
 })
